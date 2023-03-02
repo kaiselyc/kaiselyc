@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url("https://wallpapercave.com/wp/wp9825015.png");
+      background-size: cover;
+      height: 100vh;
+    }
+  </style>
+</head>
+<div id="container" style="display: flex; align-items: center; justify-content: center; height: 100vh;">
+  <div id="dialog1">
+    <p id="question" style="font-family: cursive; text-align: center;">hi hehe</p>
+    <div id="buttons" style="display: flex; justify-content: space-between; width: 200px;">
+      <button id="yes" style="background-color: green; border: none;">hello!</button>
+      <button id="no" style="background-color: red; border: none;">sino ka ba?</button>
+    </div>
+  </div>
+  <div id="dialog2" style="display: none;">
+    <p id="thanks" style="font-family: cursive; font-weight: 300; text-align: center;">hahahahhhahh i miss u:(</p>
+    <div id="new-buttons" style="display: flex; justify-content: space-between; width: 400px;">
+      <button id="yes2" style="background-color: green; border: none;">hahahhah same</button>
+      <button id="no2" style="background-color: red; border: none;">yoko sau</button>
+    </div>
+  </div>
+<div id="gamer" style="display: none; text-align: center;">
+<div id="gamer" style="display: flex; justify-content: center; align-items: center; position: relative;">
+  <p style="font-family: cursive; font-weight: bold; text-align: center; position: absolute; top: 0;">me pag di ka nakakausap</p>
+  <img src="https://media.tenor.com/BPgPSB0Nzo4AAAAC/sunoo-tiktok-sunoo-enhypen.gif" alt="gamer-gif">
+</div>
+</div>
+<script>
+document.querySelector('#no').addEventListener('mouseover', function() {
+  let x = Math.floor(Math.random() * window.innerWidth);
+  let y = Math.floor(Math.random() * window.innerHeight);
+  this.style.position = "fixed";
+  this.style.left = x + 'px';
+  this.style.top = y + 'px';
+});
+document.querySelector('#yes').addEventListener('click', function() {
+document.querySelector('#dialog1').style.display = 'none';
+document.querySelector('#dialog2').style.display = 'block';
+});
+
+document.querySelector('#no2').addEventListener('mouseover', function() {
+let x = Math.floor(Math.random() * window.innerWidth);
+let y = Math.floor(Math.random() * window.innerHeight);
+this.style.position = "fixed";
+this.style.left = x + 'px';
+this.style.top = y + 'px';
+});
+
+document.querySelector('#yes2').addEventListener('click', function() {
+document.querySelector('#dialog2').style.display = 'none';
+document.querySelector('#gamer').style.display = 'flex';
+});
+</script>
