@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    /* ===== PAGEFLIP ===== */
+
     const pageFlip = new St.PageFlip(book, {
         width: 1900,
         height: 1900,
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     pageFlip.loadFromHTML(document.querySelectorAll(".page"));
     pageFlip.on("flip", () => { flipSound.play(); });
 
-    /* ===== FALLING HEARTS ===== */
+
     function createHeart() {
         const heart = document.createElement("div");
         heart.className = "heart";
@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.appendChild(heart);
         setTimeout(() => heart.remove(), 5000);
     }
-    setInterval(createHeart, 250);
+    setInterval(createHeart, 400);
 
 });
+
