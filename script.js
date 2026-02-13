@@ -47,7 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.appendChild(heart);
         setTimeout(() => heart.remove(), 5000);
     }
-    setInterval(createHeart, 400);
+    setInterval(createHeart, 500);
 
 });
+
 
