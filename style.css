@@ -1,4 +1,4 @@
-/* ===== BODY ===== */
+
 body {
     margin: 0;
     overflow: hidden;
@@ -6,7 +6,7 @@ body {
     position: relative;
 }
 
-/* ===== BACKGROUND ===== */
+
 .background-blur {
     position: fixed;
     width: 100%;
@@ -31,7 +31,7 @@ body {
     z-index: -1;
 }
 
-/* ===== LOCK SCREEN ===== */
+
 #lockScreen {
     position: fixed;
     width: 100%;
@@ -62,7 +62,7 @@ body {
     cursor: pointer;
 }
 
-/* ===== BOOK ===== */
+
 #book {
     width: 1900px;
     height: 1900px;
@@ -73,7 +73,7 @@ body {
     filter: drop-shadow(0 50px 60px rgba(0,0,0,0.6));
 }
 
-/* ===== PAGE ===== */
+
 .page {
     width: 100%;
     height: 100%;
@@ -94,14 +94,14 @@ body {
 .page2 { background-color: #fff0f5; }
 .page3 { background-color: #ffe4e1; }
 
-/* ===== COVER ===== */
+
 .cover {
     background: linear-gradient(145deg, #5a0000, #8b0000);
     color: gold;
-    display: flex;               /* flexbox */
-    justify-content: center;     /* horizontal center */
-    align-items: center;         /* vertical center */
-    text-align: center;          /* multi-line text center */
+    display: flex;               
+    justify-content: center;     
+    align-items: center;       
+    text-align: center;          
     font-size: 36px;
     font-weight: bold;
     text-shadow: 0 0 15px gold;
@@ -109,21 +109,21 @@ body {
     height: 100%;
     box-sizing: border-box;
 
-    /* REMOVE padding so flex centering works perfectly */
+   
     padding: 0;
 }
 
 
-/* ===== POLAROID CONTAINER ===== */
+
 .polaroid-container {
     display: flex;
-    flex-wrap: wrap;      /* automatically move to next line */
+    flex-wrap: wrap;      
     justify-content: center;
-    gap: 40px 60px;       /* vertical + horizontal spacing */
+    gap: 40px 60px;      
     margin-top: 30px;
 }
 
-/* ===== POLAROID ===== */
+
 .polaroid {
     width: 150px;
     background: white;
@@ -148,7 +148,7 @@ body {
     transform: translateX(-50%) rotate(-5deg);
 }
 
-/* ===== HANDWRITING ===== */
+
 .handwrite {
     position: relative;
     line-height: 1.6;
@@ -165,7 +165,7 @@ body {
     to { clip-path: inset(0 0 0 0); }
 }
 
-/* ===== FALLING HEARTS ===== */
+
 .heart {
     position: fixed;
     color: #ff4da6;
@@ -176,3 +176,4 @@ body {
 @keyframes fall {
     to { transform: translateY(110vh); }
 }
+
